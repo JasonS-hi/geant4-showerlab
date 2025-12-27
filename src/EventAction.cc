@@ -11,7 +11,7 @@ EventAction::~EventAction() = default;
 void EventAction::BeginOfEventAction(const G4Event* event) {
     Analysis::BeginEvent(event->GetEventID());
 
-    // Record beam energy at event start (so it is consistent with the event)
+    // Record beam energy at event start
     auto& ev = Analysis::Event();
     if (fGen) {
         ev.ebeam_GeV = fGen->GetBeamEnergyGeV();

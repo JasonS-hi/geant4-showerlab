@@ -1,4 +1,5 @@
 #include "DetectorConstruction.hh"
+#include "Data/EventData.hh"
 
 #include "G4NistManager.hh"
 #include "G4Material.hh"
@@ -18,10 +19,6 @@
 #include "DetectorSD/CherenkovSD.hh"
 
 namespace {
-  // ============================================================
-  //               PARAMETERS YOU WILL TUNE LATER
-  // ============================================================
-
   // World
   constexpr G4double kWorldX = 2.0*m;
   constexpr G4double kWorldY = 2.0*m;

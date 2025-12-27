@@ -11,7 +11,7 @@ TrackerSD::TrackerSD(const G4String& name, PlaneKind kind)
 TrackerSD::~TrackerSD() = default;
 
 void TrackerSD::Initialize(G4HCofThisEvent*) {
-    // Nothing to init; EventData reset happens in EventAction.
+    // Nothing to initialise; EventData reset happens in EventAction.
 }
 
 G4bool TrackerSD::ProcessHits(G4Step* step, G4TouchableHistory*) {
@@ -26,7 +26,7 @@ G4bool TrackerSD::ProcessHits(G4Step* step, G4TouchableHistory*) {
     const G4double t_ns = t / ns;
 
     if (fKind == PlaneKind::T1) {
-        if (!(ev.t1t_ns == ev.t1t_ns) || t_ns < ev.t1t_ns) { // NaN check and earliest time
+        if (!(ev.t1t_ns == ev.t1t_ns) || t_ns < ev.t1t_ns) {
             ev.t1x_mm = x_mm; ev.t1y_mm = y_mm; ev.t1t_ns = t_ns;
         }
     } else {

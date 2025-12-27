@@ -15,7 +15,7 @@ void ScintillatorSD::Initialize(G4HCofThisEvent*) {}
 G4bool ScintillatorSD::ProcessHits(G4Step* step, G4TouchableHistory*) {
     auto& ev = Analysis::Event();
 
-    const auto edep = step->GetTotalEnergyDeposit(); // energy deposit in volume
+    const auto edep = step->GetTotalEnergyDeposit(); // energy deposit
     if (edep <= 0) return false;
 
     const auto t = step->GetPreStepPoint()->GetGlobalTime();

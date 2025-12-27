@@ -28,7 +28,6 @@ G4bool EcalCrystalSD::ProcessHits(G4Step* step, G4TouchableHistory*) {
     if (crystalID < 0 || crystalID >= EventData::kNcrystals) return false;
 
     // Convert world position -> local position of the current volume (the crystal)
-    // Local z should be in roughly [-L/2, +L/2] for a G4Box centered at z=0.
     const auto worldPos = step->GetPreStepPoint()->GetPosition();
     const auto localPos = touch->GetHistory()->GetTopTransform().TransformPoint(worldPos);
     const G4double zLocal = localPos.z();

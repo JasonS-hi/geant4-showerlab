@@ -8,8 +8,8 @@ include(${Geant4_USE_FILE})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cc )
-add_executable(showerlab ${SOURCES}
-        main.cc)
+add_executable(showerlab ${SOURCES} main.cc
+)
 target_link_libraries(showerlab ${Geant4_LIBRARIES})
 
 # Copy macros into build dir for convenience

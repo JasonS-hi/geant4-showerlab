@@ -14,7 +14,7 @@
 
 
 // Output directory (can be changed)
-G4String Analysis::fOutDir = "data/output";
+G4String Analysis::fOutDir = "data";
 
 // Event data stays thread-local (correct)
 G4ThreadLocal std::unique_ptr<EventData> Analysis::tEvent;

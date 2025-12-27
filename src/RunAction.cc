@@ -7,8 +7,8 @@ RunAction::RunAction() = default;
 RunAction::~RunAction() = default;
 
 void RunAction::BeginOfRunAction(const G4Run*) {
-    // Output directory (change if you want)
-    Analysis::SetOutputDirectory("data/output");
+    // Output directory
+    Analysis::SetOutputDirectory("data");
     Analysis::BeginRun();
 }
 

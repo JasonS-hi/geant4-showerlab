@@ -1,2 +1,2 @@
 #include "Data/EventData.hh"
-// No implementation needed (struct-only).
+// No implementation needed

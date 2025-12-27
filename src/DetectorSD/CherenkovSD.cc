@@ -21,7 +21,7 @@ G4bool CherenkovSD::ProcessHits(G4Step* step, G4TouchableHistory*) {
     if (track->GetDefinition()->GetPDGCharge() == 0.0) return false;
 
     // Compute beta from momentum and mass: beta = p / sqrt(p^2 + m^2)
-    const G4double p = track->GetMomentum().mag();  // in energy units (MeV/c with Geant4 conventions)
+    const G4double p = track->GetMomentum().mag();  // in energy units (MeV/c)
     const G4double m = track->GetDefinition()->GetPDGMass();
     if (p <= 0.0) return false;
 

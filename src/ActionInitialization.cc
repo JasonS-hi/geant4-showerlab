@@ -9,7 +9,6 @@ ActionInitialization::ActionInitialization() = default;
 ActionInitialization::~ActionInitialization() = default;
 
 void ActionInitialization::BuildForMaster() const {
-    // Master thread: no event processing; only run-level actions matter
     SetUserAction(new RunAction());
 }
 
