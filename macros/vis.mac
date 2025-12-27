@@ -1,0 +1,23 @@
+/vis/verbose warnings
+/vis/open OGL 1200x1200
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+
+/tracking/storeTrajectory 1
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate
+
+/vis/modeling/trajectories/create/drawByCharge ch
+/vis/modeling/trajectories/ch/default/setDrawStepPts true
+/vis/modeling/trajectories/ch/default/setStepPtsSize 2
+
+/gun/particle e-
+/gun/energy {E} GeV
+/gun/position 0 0 -50 cm
+/gun/direction 0 0 1
+
+#uncomment to visualise 1 event.
+#/run/beamOn 1
+#/vis/viewer/update

@@ -1,0 +1,10 @@
+#run macro, recommended not to visualise
+/run/initialize
+
+#use /control/alias E [desired value] (default is 2 GeV)
+/gun/energy {E} GeV
+
+/run/printProgress 100
+
+#increase for more events
+/run/beamOn 2500
