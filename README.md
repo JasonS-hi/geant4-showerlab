@@ -53,4 +53,6 @@ Copy the macro files from the build directory and paste them into the `Release` 
 Use `/control/execute vis.mac` or `/control/execute run.mac`
 
 You can tweak the macros vis.mac and run.mac in an IDE or just Notepad for desired results.
-	
+
+### Results
+Results are written into the data folder in a .csv file
