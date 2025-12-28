@@ -15,10 +15,10 @@ Download CMake [here](https://cmake.org/download/) and install onto your compute
 
 Download Visual Studio 2026 [here](https://visualstudio.microsoft.com/downloads/), make sure that you select the `Desktop development with C++` module in the Visual Studio Installer software.
 
-### 1. Download project
+## 1. Download project
 Download project and extract files
 
-### 2. CMake
+## 2. CMake
 Open CMake, drag and drop cmakelists.txt from the files extracted into the CMake GUI. 
 
 Create a build folder and paste the path in the `Where to build the binaries:` path
@@ -40,15 +40,15 @@ Click `Generate`
 
 Click `Open Project`
 
-### 3. Visual Studio
+## 3. Visual Studio
 In Visual studio, make sure that you have `showerlab` set as the startup project, then build it.
 
-### 4. File Explorer
+## 4. File Explorer
 The executable can be found at the path specified by Visual Studio in a folder called `Release`
 
 Copy the macro files from the build directory and paste them into the `Release` folder, or the executable will not run properly
 
-### 5. Run the executable
+## 5. Run the executable
 
 ### Macros
 Use `/control/execute vis.mac` or `/control/execute run.mac`
